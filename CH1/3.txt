@@ -1,0 +1,6 @@
+It pays to understand how Compilation system works
+
+1. optimizing program performance
+2. Understanding link-time errors
+3. Avoiding security holes
+

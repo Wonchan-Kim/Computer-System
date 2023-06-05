@@ -1,0 +1,5 @@
+Information consists of Bits + Context
+
+The hello program, (hello world) is created after editor saves the text file as hello.c.
+The program is sequence of a bit(0 or 1), organized in 8 bit source program, with each byte representing some text character.
+Hello.c program is stored in a file as a sequence of bytes. 

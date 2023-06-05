@@ -1,0 +1,14 @@
+Programs are translated into different forms by other Programs
+
+In order to hello.c executed in a system, individual c statements should be translated into a sequence of low-level machine language instructions.
+These instructions are then packed in a form called an executable object program and stored as a binary disk file. 
+On a Unix system, the translation from source file to object file is perfomed by a compile driver.
+
+Preprocessing phase : The preprocessor modifies tthe original program according to directives that begin with # character. 
+                      #include <stdio.h> command in line 1 of hello.c tells the preprocessor to read the contents of the system header file.
+                      Result in other c program typically with .i suffix.
+Compilation Phase : The compiler translates the text file into the text file hello.s which contains an assembly-language program. 
+Assembly Phase : assembler translates hello.s into machine-language instructions packages them in a form known as a relocatable object program.
+                 Stores the result in the object file hello.o
+Linking Phase : Printf function resides in a seperate pre-compiled object file called printf.o, which must be merged with hello.o program.
+                The linker (ld) handles this merging process. The result is a hello file, which is an executable object file. 
